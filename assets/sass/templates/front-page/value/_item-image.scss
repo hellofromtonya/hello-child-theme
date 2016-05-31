@@ -1,0 +1,110 @@
+.value__item_image {
+  position: relative;
+  @include transform(translate3d(0, 0, 1px));
+  @include transform-style(preserve-3d);
+
+  margin-bottom: 30px;
+
+  @include media(600px) {
+    margin-bottom: 0;
+  }
+
+  img:nth-of-type(1) {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .animated__item {
+    position: absolute;
+  }
+}
+
+.code-makes-sense {
+  .animated__item {
+    &:nth-child(2) {
+      top: 100px;
+      left: 10%;
+    }
+    &:nth-child(3) {
+      top: 0;
+      right: 10%;
+    }
+  }
+}
+
+.build-scratch {
+  .animated__item {
+    &:nth-child(2) {
+      bottom: -10%;
+      right: -30px;
+
+      @include media(480px) {
+        bottom: 0;
+        right: 10px;
+      }
+
+      @include media(600px) {
+        bottom: -10%;
+        right: 80px;
+      }
+
+      @include media(767px) {
+        right: -10%;
+      }
+
+      @include media(900px) {
+        bottom: 0;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.smash-bugs {
+  .animated__item {
+    &.bug {
+      top: 0;
+      right: 15%;
+
+      @include media(600px) {
+        right: 35%;
+      }
+
+      @include media(600px) {
+        right: 20%;
+      }
+
+      @include media(979px) {
+        top: -10px;
+        right: 90px;
+      }
+
+      @include media(1200px) {
+        top: 0;
+        right: 30px;
+      }
+    }
+    &.flickBug {
+      top: 80px;
+      left: -20%;
+
+      @include media(480px) {
+        left: 0%;
+      }
+
+      @include media(767px) {
+        left: -20%;
+      }
+
+      @include media(979px) {
+        top: 90px;
+        left: -10px;
+      }
+
+      @include media(1200px) {
+        top: 100px;
+        left: -10px;
+      }
+    }
+  }
+}

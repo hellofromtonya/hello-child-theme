@@ -1,0 +1,48 @@
+//
+// Title Area
+// - Site Title
+// - Site Description
+//======================================
+
+.title-area {
+  float: left;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    text-align: left;
+    width: 50%;
+  }
+}
+
+.site-title {
+  line-height: 1;
+  margin: 0;
+
+  a,
+  a:hover, a:focus, a:active {
+    border: 0;
+    @include retina-image( "#{$imagePath}/KTC-logo-2016-300x44", 300px, jpg, "#{$imagePath}/KTC-logo-2016-300x44@2x", "@2x" );
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    min-height: 44px;
+    width: 300px;
+    margin: 0 auto;
+    text-indent: -9999px;
+
+    @include media($small-screen) {
+      @include retina-image( "#{$imagePath}/KTC-logo-2016-493x72", 493px, jpg, "#{$imagePath}/KTC-logo-2016-493x72@2x", "@2x" );
+      min-height: 72px;
+      width: 493px;
+    }
+  }
+}
+
+.site-description {
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  text-indent: -9999px;
+}

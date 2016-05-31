@@ -1,0 +1,37 @@
+/*!
+	Theme Name: Hello
+	Description: A minimalist theme that brings a smile to your face.
+	Author: hellofromTonya
+	Author URI: https://hellofromtonya.com
+	Version: 1.0.0
+	Template: genesis
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+	Text Domain: hello
+*/
+
+// Config
+$imagePath: 'assets/images';
+
+// Base stuff
+@import "bourbon";
+@import "neat";
+@import "utilities/index";
+@import "base/index";
+
+// Layouts
+@import "layout/index";
+
+// Components
+@import "components/index";
+
+// Modules
+@import "modules/index";
+
+// Templates - Page specific styles
+@import "templates/archive/index";
+@import "templates/posts-page/index";
+
+// Widgets
+@import "widgets/index";
+

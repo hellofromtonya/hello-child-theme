@@ -1,0 +1,65 @@
+/* Mobile Menu Toggle
+--------------------------------------------- */
+
+.menu-primary {
+	display: none;
+	position: relative;
+
+	@include media($medium-screen-up) {
+		display: inline-block;
+	}
+}
+
+.menu-toggle {
+	color: $white;
+	display: block;
+	font-size: 30px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 9px;
+	visibility: visible;
+	background-color: transparent;
+	border: 0;
+
+	@include media($medium-screen-up) {
+		display: block;
+		visibility: hidden;
+	}
+}
+
+.sub-menu-toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: $secondary-font-size;
+	padding: 16px;
+
+	@include media($medium-screen-up) {
+		display: block;
+		visibility: hidden;
+	}
+}
+
+.menu-toggle:before {
+	content: "\2261";
+}
+
+.menu-toggle.menu-toggle-activated:before {
+	content: "x";
+}
+
+.sub-menu-toggle:before {
+	content: "+";
+}
+
+.sub-menu-toggle.menu-toggle-activated:before {
+	content: "-";
+}
+
+@include media($medium-screen-up) {
+
+	button.menu-toggle {
+		display: none;
+	}
+
+}

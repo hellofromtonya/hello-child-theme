@@ -1,0 +1,81 @@
+//
+// Buttons
+//=======================
+
+.button,
+.entry-content a.button,
+.content-hide-message a.button,
+input[type="submit"] {
+  background: $blue;
+  border: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  color: $white;
+  cursor: pointer;
+  font-size: $base-font-size;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  width: auto;
+
+  &.orange {
+    background: $orange;
+    border: 1px solid $orange;
+    border-bottom: 1px solid $orange;
+    color: $blue;
+  }
+
+  &.green {
+    background: $green;
+    border: 1px solid $green;
+    border-bottom: 1px solid $green;
+    color: $blue;
+  }
+
+  &.gray {
+    background: $gray;
+    border: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    color: $blue;
+  }
+
+  &.button__free {
+    background-color: $colorFree;
+    border: 1px solid $colorFree;
+    color: $white;
+  }
+
+  &.button__basic_plan {
+    background-color: $colorBasic;
+    border: 1px solid $colorBasic;
+  }
+
+  &.button__pro_plan {
+    background-color: $colorPro;
+    border: 1px solid $colorPro;
+  }
+}
+
+.button {
+  display: inline-block;
+}
+
+button:focus,
+input:focus[type="button"],
+input:focus[type="reset"],
+input:focus[type="submit"],
+.button:focus,
+.entry-content a.button:focus,
+.button__free,
+.button__basic_plan,
+.button__pro_plan {
+  background-color: $white;
+  color: $blue;
+}
+
+.button:hover,
+.entry-content a.button:hover,
+input:hover[type="submit"] {
+  background-color: $white;
+  border: 1px solid $blue;
+  color: $blue;
+}

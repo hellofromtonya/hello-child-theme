@@ -1,0 +1,46 @@
+//
+// Page Header Mixin
+//==============================
+
+
+@mixin page_header($margin: 23vw, $content_left: -40px) {
+  background: transparent;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  display: block;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include media($huge-screen) {
+    margin-left: -$margin;
+    margin-right: -$margin;
+    padding-left: $margin;
+    padding-right: $margin;
+  }
+
+  .entry-title {
+    @include media($medium-screen-up)  {
+      margin-left: $content_left;
+    }
+  }
+
+  p {
+    @include media($medium-screen-up)  {
+      margin-left: $content_left;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .entry-title {
+    margin-bottom: 30px;
+  }
+}

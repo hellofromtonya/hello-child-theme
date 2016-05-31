@@ -1,0 +1,23 @@
+.learn_skills_center {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  padding: 20px;
+  box-shadow: rgb(0, 171, 215) 0px 0px 10px inset, rgb(0, 171, 215) 0px 0px 10px;
+  border: 2px solid rgb(0, 171, 215);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -100px;
+
+  h2 {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    color: $white;
+    font-size: rem(26);
+  }
+}

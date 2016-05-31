@@ -1,0 +1,11 @@
+// Config
+$use-tada: true;
+$imagePath: '../../images';
+
+// Base stuff
+@import "bourbon";
+@import "neat";
+@import "utilities/index";
+@import "base/index";
+
+@import "templates/front-page/index";

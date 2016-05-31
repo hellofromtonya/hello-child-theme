@@ -1,0 +1,72 @@
+/* Pagination
+--------------------------------------------- */
+
+.pagination {
+  @include clearfix;
+}
+
+.pagination,
+.posts-navigation {
+  margin-bottom: 40px;
+}
+
+.pagination .nav-links {
+  display: inline;
+
+  a, .current {
+    background: $darkBlue;
+    border: 1px solid $white;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+    &:hover {
+      background: $white;
+      border: 1px solid $darkBlue;
+      color: $darkBlue;
+    }
+  }
+
+  .current {
+    background: $white;
+    border: 1px solid $darkBlue;
+    color: $darkBlue;
+    cursor: none;
+  }
+}
+
+.entry-pagination {
+  margin: 30px 0;
+}
+
+.pagination__entry {
+  overflow: hidden;
+  margin: 30px 0;
+
+  .pagination__post-title {
+    font-size: rem(16);
+  }
+
+  .button {
+    padding: 8px 24px;
+  }
+
+  .pagination__previous {
+    margin-bottom: 20px;
+  }
+
+  @include media($small-screen-up) {
+    .pagination__previous, .pagination__next {
+      margin-bottom: 0;
+      width: 40%
+    }
+    .pagination__previous {
+      float: left;
+    }
+
+    .pagination__next {
+      float: right;
+      text-align: right;
+    }
+  }
+}

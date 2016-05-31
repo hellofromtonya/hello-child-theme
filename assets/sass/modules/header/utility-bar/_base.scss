@@ -1,0 +1,32 @@
+//
+// Utility Bar Base
+//=================
+
+.utility-bar {
+  background-color: $green;
+  color: $white;
+  font-size: $secondary-font-size;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $white;
+    &:hover, &:active, &:focus {
+      border-bottom: 0;
+      color: $black;
+    }
+  }
+
+  p,
+  .widgettitle {
+    color: $white;
+    margin: 0;
+  }
+
+  .hello-member {
+    margin-right: 10px;
+    font-size: rem(18);
+  }
+}

@@ -1,0 +1,55 @@
+//
+// Typography
+//===============================
+
+// Global Font Families
+//------------------------------------------------------------------------------
+$sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-alt: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Lato, Arial, sans-serif;
+$mono: "Courier 10 Pitch", Courier, monospace;
+// Base Font Families
+//------------------------------------------------------------------------------
+$base-font-family: $sans-serif;
+$heading-font-family: $serif;
+$blockquote-font-family: $serif;
+// Base Font Sizes
+//------------------------------------------------------------------------------
+$base-font-size: 18px;
+$base-line-height: 1.625;
+$heading-line-height: 1.25;
+$secondary-font-size: floor(modular-scale(-1, $base-font-size, $major-second));
+$site-title-font-size: floor(modular-scale(5, $base-font-size, $major-second));
+// Heading Font Properties
+//------------------------------------------------------------------------------
+$h1-font-size: floor(modular-scale(6, $base-font-size, $major-second));
+$h2-font-size: floor(modular-scale(5, $base-font-size, $major-second));
+$h3-font-size: floor(modular-scale(4, $base-font-size, $major-second));
+$h4-font-size: floor(modular-scale(3, $base-font-size, $major-second));
+$h5-font-size: floor(modular-scale(2, $base-font-size, $major-second));
+$h6-font-size: floor(modular-scale(1, $base-font-size, $major-second));
+// Header Font Properties
+//------------------------------------------------------------------------------
+$header-font-family: $heading-font-family;
+// Title Font Properties
+//------------------------------------------------------------------------------
+$loop-title-size: $h1-font-size;
+$box-title-size: $h4-font-size;
+$widget-title-size: $h6-font-size;
+// Menu Font Properties
+//------------------------------------------------------------------------------
+$menu-toggle-size: $h2-font-size;
+$nav-font-size: $secondary-font-size;
+$subnav-font-size: $secondary-font-size;
+$pagination-font-size: $secondary-font-size;
+// Form Font Properties
+//------------------------------------------------------------------------------
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+// Entry Font Properties
+//------------------------------------------------------------------------------
+$gallery-caption-font-size: $secondary-font-size - 2;
+$wp-caption-font-size: $secondary-font-size - 2;
+// Footer Font Properties
+//------------------------------------------------------------------------------
+$footer-font-size: $secondary-font-size;

@@ -1,0 +1,109 @@
+//
+// Footer widgets
+//=======================
+
+
+.footer-widgets {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 40px 0 0;
+
+  a {
+    color: $white;
+    &:hover, &:focus, &:active {
+      color: $orange;
+      border-bottom: 0;
+    }
+
+    &.footer-logo {
+      border: 0;
+      outline: none;
+      border-bottom: none;
+    }
+  }
+
+  .widget {
+    margin-bottom: 0;
+  }
+
+  .widgettitle {
+    font-size: rem(18);
+    color: $gray;
+  }
+
+  .entry {
+    background: transparent;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 6px;
+    word-wrap: break-word;
+  }
+
+  .search-form input[type="search"] {
+    width: 100%;
+  }
+
+  .social-links {
+    font-size: 200%;
+    li {
+      display: inline-block;
+      padding-right: 5%;
+    }
+
+    a {
+      border-bottom: 0;
+    }
+  }
+}
+
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+  font-size: 90%;
+}
+
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+  @include media($small-screen-up) {
+    margin-right: 5%;
+  }
+}
+
+.footer-widgets-1 {
+  img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  @include media($smaller-screen-up) {
+    width: 100%;
+  }
+
+  @include media($small-screen-up) {
+    width: 100% - ( 15% * 3 ) - ( 5% * 3 );
+  }
+}
+
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
+  @include media($smaller-screen-up) {
+    width: 31%;
+    margin-bottom: 40px;
+  }
+  @include media($small-screen-up) {
+    width: 15%;
+  }
+}

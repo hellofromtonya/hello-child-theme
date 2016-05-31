@@ -1,0 +1,76 @@
+//
+// Latest (content)
+//==============
+
+body.home .site-inner {
+  .latest {
+    width: 100%;
+    overflow: hidden;
+    background-color: $white; //#ced2b7;
+    padding: 30px;
+  }
+}
+
+.latest .grid__block {
+  padding: 15px;
+
+}
+
+.latest__main-header {
+  &::before, &::after {
+    content: " ";
+    border-top: 5px solid $blue;
+    width: 250px;
+    height: 10px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  &::after {
+    margin-bottom: 30px;
+  }
+  text-align: center;
+}
+
+.latest_header {
+  width: 100%;
+  text-align: center;
+  .fa {
+    font-size: rem(30);
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+}
+
+.latest__content {
+  width: 100%;
+}
+
+.entry-content ul > li.latest__item,
+.latest__content ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.latest__item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.latest__item_link {
+  display: block;
+  text-decoration: none;
+  color: $blue;
+  background-color: $white;
+  padding: 8px;
+  width: 100%;
+  font-weight: 400;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}

@@ -1,0 +1,37 @@
+//
+// Hello Bar - message
+//=====================
+
+.hello-bar {
+   .message-container {
+    width: 100%;
+    font-family: $heading-font-family;
+    color: $white;
+    border-bottom: none;
+    display: block;
+
+    &:hover, &:focus, &:active {
+      color: #1c202c;
+    }
+  }
+
+  .message {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 5%;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: $secondary-font-size;
+
+    @include media($medium-screen-up) {
+      font-size: rem(18);
+      max-width: $wrap-max-width-medium;
+    }
+
+    @include media($large-screen-up) {
+      max-width: $wrap-max-width-large;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

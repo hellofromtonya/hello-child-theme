@@ -1,0 +1,17 @@
+//
+// Site Header
+//====================
+
+.site-header {
+  background: $white;
+  .wrap {
+    padding: 20px 0;
+  }
+}
+
+.header-full-width {
+  .title-area,
+  .site-title {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+/* Site Header Navigation
+--------------------------------------------- */
+
+.site-header {
+	.sub-menu {
+		border-top: 1px solid lighten($black, 92);
+		.sub-menu {
+			margin-top: -53px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+body.home .site-inner .value__section {
+  .wrap {
+    max-width: $max-width;
+    padding: 40px 5%;
+    @include media($medium-screen-up) {
+      max-width: $wrap-max-width-medium;
+      padding: 40px 0;
+    }
+
+    @include media($large-screen-up) {
+      max-width: $wrap-max-width-large;
+    }
+  }
+}

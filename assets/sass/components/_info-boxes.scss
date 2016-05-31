@@ -1,0 +1,32 @@
+//
+// Info box
+//====================
+
+.infobox {
+  background-color: $gray;
+  overflow: hidden;
+  padding: 20px;
+  margin: 30px 0;
+
+  &.reminder {
+    background-color: #adcd00;
+  }
+
+  &.alert {
+    background-color: $red;
+  }
+
+  &.warning {
+    background-color: $yellow;
+  }
+
+  &.info {
+    background-color: $blue;
+  }
+
+  &.alert, &.info {
+    h1, h2, h3, h4, h5, p, & {
+      color: $white;
+    }
+  }
+}

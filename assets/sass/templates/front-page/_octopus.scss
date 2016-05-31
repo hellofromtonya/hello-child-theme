@@ -1,0 +1,33 @@
+//
+// Octopus
+// ============================
+
+.learn-do__octopus, .home-video {
+  .wrap {
+    max-width: $max-width;
+    @include media($medium-screen-up) {
+      max-width: $wrap-max-width-medium;
+    }
+
+    @include media($large-screen-up) {
+      max-width: $wrap-max-width-large;
+      padding: 0;
+    }
+  }
+}
+
+.entry-content .learn-do__octopus ul > li {
+  list-style-type: none;
+}
+
+.learn-do__octopus {
+  @include clearfix;
+  margin: 0 auto;
+  img.aligncenter {
+    margin: 0 auto;
+  }
+}
+
+.learn-do__octopus_content {
+  text-indent: -9999px;
+}

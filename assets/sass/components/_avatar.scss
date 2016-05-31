@@ -1,0 +1,15 @@
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+  float: left;
+}
+
+.author-box .avatar,
+.alignleft .avatar {
+  margin-right: 24px;
+}
+
+.alignright .avatar {
+  margin-left: 24px;
+}

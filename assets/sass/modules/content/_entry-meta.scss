@@ -1,0 +1,31 @@
+/* ## Entry Meta
+--------------------------------------------- */
+
+.entry-meta {
+  color: lighten($black, 33);
+  font-size: $secondary-font-size;
+
+  .entry-header & {
+    background-color: lighten($black, 92);
+    margin: 0 -40px 24px;
+    padding: 10px;
+    text-align: right;
+  }
+
+  .entry-footer & {
+    .button {
+      font-size: rem(12);
+      padding: 7px 15px;
+    }
+  }
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}

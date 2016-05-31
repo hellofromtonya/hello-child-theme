@@ -1,0 +1,53 @@
+/* Primary & Footer Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	background-color: $darkBlue;
+	text-align: center;
+	color: #fff;
+
+	.wrap {
+		padding: 0;
+	}
+
+	a:hover,
+	a:focus,
+	a:active,
+	.current-menu-item > a {
+		background-color: $white;
+		color: $black;
+		border: 0;
+	}
+
+
+	@include media($small-screen-up) {
+		.menu-item {
+			margin-top: -1px;
+		}
+	}
+}
+
+.menu-item {
+	span {
+		margin-left: 8px;
+	}
+	&.labs, &.docx, &.forums, &.insights, &.glossary a::before {
+		font-family: FontAwesome;
+	}
+
+	&.labs a::before {
+		content: '\f0c3';
+	}
+	&.docx a::before {
+		content: '\f19c';
+	}
+	&.insights a::before {
+		content: '\f277';
+	}
+	&.glossary a::before {
+		content: '\f00b';
+	}
+	&.forums a::before {
+		content: '\f1cd';
+	}
+}

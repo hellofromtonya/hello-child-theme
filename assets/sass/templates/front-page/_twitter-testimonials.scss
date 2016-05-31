@@ -1,0 +1,27 @@
+//
+// Twitter testimonials
+//=====================================
+
+body.home .site-inner {
+  .twitter-testimonials {
+    .wrap {
+      margin: 0 auto;
+      padding: 0 5%;
+      max-width: 100%;
+      word-wrap: break-word;
+
+      @include media($medium-screen-up) {
+        max-width: $wrap-max-width-medium;
+      }
+
+      @include media($large-screen-up) {
+        max-width: $wrap-max-width-large;
+        padding: 0;
+      }
+    }
+
+    .testimonials-title {
+      text-align: center;
+    }
+  }
+}

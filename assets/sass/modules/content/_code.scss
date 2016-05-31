@@ -1,0 +1,91 @@
+//
+// Code & Syntax
+//===================
+
+code, .entry-content code {
+  border: solid 1px #e4e4e4;
+  padding: 4px 4px 1px;
+  background: #f5f7f8;
+  font-family: $base-font-family;
+  @include border-top-radius(5px);
+  @include border-right-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+  color: #000;
+}
+
+a > code, .entry-content a > code {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: $orange;
+  &:hover, &:focus, &:active {
+    color: $black;
+  }
+}
+
+.syntax-box {
+  border-left: 10px solid #849f2a;
+  background-color: #dde4e9;
+  color: #4d4e53;
+  white-space: pre-wrap;
+  padding: 15px;
+  margin: 20px 0;
+
+  &.php {
+    border-left-color: $colorPHP;
+  }
+
+  &.jquery {
+    border-left-color: $colorjQuery;
+  }
+
+  &.javascript {
+    border-left-color: $colorJS;
+  }
+
+  &.wordpress {
+    border-left-color: $colorWordPress;
+  }
+
+  &.genesis {
+    border-left-color: $colorGenesis;
+  }
+}
+
+.syntax-box__data-type {
+  //font-style: italic;
+  font-size: 90%;
+  color: #693;
+}
+
+.syntax-box__default-value {
+  color: #936;
+}
+
+.syntax-box__defaults, .syntax-box__optionals {
+  color: #8e8e8e;
+}
+
+//.syntax__parameters-list {
+//
+//}
+
+.syntax__parameter {
+  color: #369;
+}
+
+code, .entry-content code {
+  &.syntax__parameter {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+
+.syntax__parameter-optional {
+  color: #8e8e8e;
+  font-style: italic;
+  font-size: 90%;
+}

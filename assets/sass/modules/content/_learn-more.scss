@@ -1,0 +1,145 @@
+//
+// Learn More
+//===================
+
+.entry-content .quick-start {
+  ol li, ul li {
+    margin-left: 0;
+  }
+  ul > li {
+    list-style-type: none;
+  }
+}
+.quick-start {
+  overflow: hidden;
+  @include media($small-screen-up) {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  ul {
+    list-style: none;
+    @include media($small-screen-up) {
+      @include align-items(stretch);
+      @include display(flex);
+      @include flex-direction(row);
+      @include justify-content(flex-start);
+    }
+  }
+  li {
+    height: 200px;
+
+    @include media($smaller-screen-up) {
+      font-size: rem(22);
+    }
+
+    //@include media($small-screen-up) {
+    //  font-size: rem(22);
+    //
+    //}
+    @include media($small-screen-up) {
+      font-size: rem(22);
+      @include flex(1);
+      &::before {
+        z-index:10;
+        content: " ";
+        position: absolute;
+        left: -1px;
+        top: 50px;
+        @include triangle(100px 20px, $white, right);
+      }
+    }
+    @include media($large-screen-up) {
+      font-size: rem(30);
+    }
+    position:relative;
+
+  }
+
+  .big-button {
+    padding: 5px;
+    height: 200px;
+    width: 100%;
+    color: $white;
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    text-align: center;
+    font-size: rem(30);
+    border-bottom: none;
+
+    @include media($large-screen-up) {
+      font-size: rem(40);
+    }
+
+    &.php {
+      background-color: $colorPHP;
+    }
+
+    &.wordpress {
+      background-color: $colorWordPress;
+    }
+
+    &.genesis {
+      background-color: $colorGenesis;
+    }
+
+    &:hover, &:focus, &:active {
+      background-color: $green;
+    }
+
+    .big-button-description {
+      font-size: rem(18);
+      font-weight: 400;
+
+      @include media($small-screen-up) {
+        font-size: rem(16);
+      }
+      @include media($large-screen-up) {
+        font-size: rem(18);
+      }
+    }
+  }
+}
+
+body.learn-more {
+  .entry {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .technology-section  {
+    overflow: hidden;
+    margin: 0 -50vw;
+    padding: 20px 50vw;
+
+    code {
+      background: transparent;
+      border: none;
+      padding: 0;
+      font-weight: 400;
+      font-size: $base-font-size;
+      @include border-top-radius(0px);
+      @include border-right-radius(0px);
+      @include border-bottom-radius(0px);
+      @include border-left-radius(0px);
+    }
+
+    a, p, h2, h3, code, & {
+      color: $white;
+    }
+
+    code:hover, a:hover, a:focus {
+      color: $orange;
+    }
+  }
+
+  #php {
+    background-color: $colorPHP;
+  }
+  #wordpress {
+    background-color: $colorWordPress;
+  }
+  #genesis {
+    background-color: $colorGenesis;
+  }
+}

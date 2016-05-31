@@ -1,0 +1,27 @@
+//
+// Labels
+// ===================
+
+.badge {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 7px;
+  margin-bottom: 1.5px;
+  font-size: rem(12);
+  padding: 3px 4px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.badge__free {
+  text-transform: lowercase;
+  background-color: $colorFree;
+}
+
+.badge__basic_plan, .badge__basic {
+  background-color: $colorBasic;
+}
+
+.badge__pro_plan, .badge__pro {
+  background-color: $colorPro;
+}

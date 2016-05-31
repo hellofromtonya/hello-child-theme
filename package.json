@@ -1,0 +1,42 @@
+{
+  "name": "HelloFromTonya",
+  "version": "1.0.0",
+  "description": "Gulp setup for my personal theme and website.",
+  "author": "Tonya Mork",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellofromtonya/hello-theme.git"
+  },
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
+    "browser-sync": "^2.11.1",
+    "css-mqpacker": "^4.0.0",
+    "del": "^2.2.0",
+    "glob": "^6.0.4",
+    "gulp": "^3.9.1",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sort": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-util": "^3.0.7",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.0"
+  },
+  "dependencies": {
+    "app-root-path": "^1.0.0"
+  },
+  "gulpConfig": "./config/gulp/config.js"
+}

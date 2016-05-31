@@ -1,0 +1,63 @@
+//
+// Pre-Footer
+//=======================
+
+.prefooter {
+  background-color: $green;
+  //min-height: 130px;
+
+  color: $white;
+  text-align: center;
+
+  .wrap {
+    padding: 20px 30px;
+  }
+}
+
+.prefooter .textwidget {
+  @include media(768px) {
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(center);
+  }
+}
+
+.prefooter {
+
+  @include media(768px) {
+    .message, .button {
+      float: left;
+    }
+  }
+
+  .message {
+    font-size: rem(20);
+    font-family: $heading-font-family;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    @include media(768px) {
+      margin-bottom: 0;
+    }
+
+    @include media(1280px) {
+      font-size: rem(30);
+    }
+  }
+
+  .button.orange {
+    color: $white;
+    border: $orange;
+
+    @include media($medium-screen) {
+      font-size: rem(22);
+    }
+
+    &:hover, &:focus, &:active {
+      color: $green;
+      border: $green;
+    }
+
+  }
+}

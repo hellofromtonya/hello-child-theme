@@ -1,0 +1,50 @@
+//
+// Member Nav
+// ====================
+
+.utility-bar-member-nav {
+  list-style-type: none;
+
+  li, & {
+    display: inline-block;
+  }
+
+  .fa {
+    bottom-border: 0;
+    margin-right: 6px;
+  }
+
+  @include media($small-screen-up) {
+    float: right;
+  }
+
+  li {
+    margin-left: 7px;
+  }
+
+  a{
+    font-weight: 400;
+
+    &.learn-more {
+      border-bottom: none;
+      background-color: $orange;
+      color: $white;
+      font-weight: 400;
+      padding: 4px 10px;
+      &:hover, &:focus {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+
+  //li+li::before {
+  //  content: '/';
+  //  padding-right: 7px;
+  //}
+
+  .hello-member {
+    margin-right: 10px;
+    font-size: rem(14);
+  }
+}

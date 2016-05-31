@@ -1,0 +1,68 @@
+//
+// Big Button Callouts
+// ============================
+
+body.home {
+  .big-button-callouts {
+    overflow: hidden;
+    .button {
+      float: left;
+      height: 300px;
+      width: 100%;
+      color: $white;
+      @include display(flex);
+      @include flex-direction(column);
+      @include justify-content(center);
+      text-align: center;
+      font-size: rem(30);
+
+      &:hover, &:focus, &:active {
+        background-color: #e1e5cc;
+        color: #1c202c;
+        border-color: transparent;
+
+        &.orange {
+          background-color: #f6dbd0;
+        }
+
+        &.green {
+          background-color: #dde7a9;
+        }
+      }
+
+      &.gray {
+        background-color: #ced2b7;
+        color: $black;
+        &:hover, &:focus, &:active {
+          background-color: #d1d2d6;
+          color: #cc4b14;
+        }
+      }
+
+      @include media($smaller-screen-up) {
+        font-size: rem(22);
+        width: 50%;
+      }
+
+      @include media($small-screen-up) {
+        font-size: rem(22);
+        width: 25%;
+      }
+      @include media($large-screen-up) {
+        font-size: rem(30);
+      }
+
+      .big-button-description {
+        font-size: rem(18);
+        font-weight: 400;
+
+        @include media($small-screen-up) {
+          font-size: rem(16);
+        }
+        @include media($large-screen-up) {
+          font-size: rem(18);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+//
+// Grid
+//====================================
+
+.grid__container {
+  overflow: hidden;
+  @include media(480px) {
+    @include outer-container;
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+}
+
+.grid__block {
+  margin-left: 0;
+  margin-bottom: 10px;
+
+  // 2 columns
+  @include media(480px) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  // 3 columns
+  @include media(1024px) {
+    @include omega-reset(2n);
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
+  //// 4 columns
+  //@include media(1280px) {
+  //  @include omega-reset(3n);
+  //  @include span-columns(3);
+  //  @include omega(4n);
+  //}
+
+  // 2 columns
+  @include media(480px) {
+    @include display(flex);
+    @include flex(1 0 auto);
+  }
+}

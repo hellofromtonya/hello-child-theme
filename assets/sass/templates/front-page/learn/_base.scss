@@ -1,0 +1,15 @@
+//
+// Base
+//=====================
+
+$learnHeight: 800px;
+.learn__section {
+  position: relative;
+  height: $learnHeight;
+  z-index: 30;
+  overflow: hidden;
+}
+
+.entry-content .learn__section li {
+  list-style-type: none;
+}

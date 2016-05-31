@@ -1,0 +1,14 @@
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-footer {
+	background-color: $darkBlue;
+	text-align: center;
+
+	a:hover,
+	a:focus,
+	a:active,
+	.current-menu-item > a  {
+		color: $orange;
+	}
+}

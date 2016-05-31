@@ -1,0 +1,57 @@
+//
+// The Value
+//==========================
+
+body.home .site-inner .the-value .wrap {
+  padding: 40px 10%;
+
+  @include media($medium-screen-up) {
+    padding: 0;
+  }
+  @include media($large-screen-up) {
+    max-width: 1000px;
+  }
+}
+
+.the-value {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  background-image: url(#{$imagePath}/wordpress-developer-hero.jpg);
+
+  height: 450px;
+  text-align: center;
+
+  @include media($smaller-screen-up) {
+
+  }
+
+  @include media($large-screen-up) {
+    height: 600px;
+  }
+
+  @include media($large-screen-up) {
+    height: 1000px;
+  }
+
+  h2 {
+    color: $white;
+    font-size: rem(26);
+
+    @include media($smaller-screen) {
+      font-size: rem(30);
+    }
+    @include media($small-screen-up) {
+      font-size: rem(50);
+    }
+  }
+}

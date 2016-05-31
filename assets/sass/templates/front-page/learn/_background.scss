@@ -1,0 +1,42 @@
+//
+// Background
+//=========================
+
+.entry-content .learn__background {
+  margin-bottom: 0;
+
+  li {
+    margin-left: 0;
+  }
+}
+
+.learn__background {
+  width: 100%;
+  height: $learnHeight;
+  @include transform-style(preserve-3d);
+  backface-visibility: hidden;
+}
+
+.learn__background_layer {
+  width: 120%;
+  height: 120%;
+  margin-left: -10%;
+  margin-top: -40px;
+  backface-visibility: hidden;
+  @include transform-style(preserve-3d);
+  @include transition( transform .2s ease-in-out );
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 0px;
+  @include transform( translate3d(0px, 0px, 0px) );
+
+  &.space {
+    background: url(#{$imagePath}/space.jpg);
+    background-position: center;
+  }
+
+  &.stars {
+    background: url( #{$imagePath}/stars.png );
+  }
+}

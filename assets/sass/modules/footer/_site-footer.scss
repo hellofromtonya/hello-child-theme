@@ -1,0 +1,28 @@
+//
+// Site Footer
+//===============================
+
+.site-footer {
+	background-color: $darkBlue;
+	color: $white;
+	font-size: $footer-font-size;
+	padding: 20px 0;
+	text-align: left;
+
+	a {
+		color: $white;
+
+		&:hover, &:focus, &:active {
+			border-bottom: 0;
+			color: $orange;
+		}
+	}
+
+	.fa-heart {
+		color: $red;
+	}
+
+	p {
+		margin: 0;
+	}
+}

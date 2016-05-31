@@ -1,0 +1,56 @@
+/* WordPress
+--------------------------------------------- */
+
+address {
+  margin-bottom: 24px;
+}
+
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 24px 24px 0;
+}
+
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 24px 24px;
+}
+
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+  margin-bottom: 24px;
+}
+
+.wp-caption-text {
+  font-size: $wp-caption-font-size;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.widget_calendar table td {
+  padding: 5px;
+}
+
+.hide {
+  display: none;
+}

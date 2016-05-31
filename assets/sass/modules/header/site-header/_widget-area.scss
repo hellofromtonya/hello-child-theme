@@ -1,0 +1,44 @@
+//
+// Widget Right Area
+//=================================
+
+/* Header Right Widget Area
+--------------------------------------------- */
+.site-header .widget-area {
+  float: right;
+  text-align: center;
+  width: 100%;
+
+  @include media($medium-screen-up) {
+    text-align: right;
+    width: 50%;
+  }
+}
+
+.header-widget-area {
+  .search-form {
+    height: 53px;
+    margin: 20px auto 0;
+    width: 300px;
+
+    @include media($small-screen-up) {
+      float: right;
+      margin-top: 0;
+      width: 100%
+    }
+  }
+
+  .genesis-nav-menu a {
+    color: $black;
+  }
+
+  .genesis-nav-menu a:hover,
+  .genesis-nav-menu .current-menu-item > a,
+  .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: lighten($black, 33);
+  }
+
+  .genesis-nav-menu .sub-menu a {
+    background-color: lighten($black, 92);
+  }
+}

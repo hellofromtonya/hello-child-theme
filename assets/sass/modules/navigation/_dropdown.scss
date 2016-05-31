@@ -1,0 +1,12 @@
+/* Dropdown Menu
+--------------------------------------------- */
+
+.menu .menu-item:focus {
+  position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.wpacc-hover > ul.sub-menu {
+  left: auto;
+  opacity: 1;
+}

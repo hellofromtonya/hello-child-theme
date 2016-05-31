@@ -1,0 +1,14 @@
+//
+// Quips
+// =================
+
+.quip {
+  margin: 0 -9999rem 30px;
+  padding: 20px 9999rem;
+  background: #cccccc;
+  font-size: rem( 22 );
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

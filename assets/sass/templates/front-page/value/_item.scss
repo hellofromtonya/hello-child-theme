@@ -1,0 +1,40 @@
+
+.value__item {
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  @include media(768px) {
+    @include clearfix;
+    width: 100%;
+
+    @include align-items(center);
+    @include display(flex);
+    @include justify-content(center);
+
+    > div:first-child {
+      margin-right: 4%;
+    }
+
+    .value__item_image, .value__item_content {
+      width: 48%;
+    }
+
+    .value__item_image {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @include media(1280px) {
+    height: 400px;
+
+    .value__item_image {
+      width: 40%;
+    }
+
+    .value__item_content {
+      width: 56%;
+    }
+  }
+}

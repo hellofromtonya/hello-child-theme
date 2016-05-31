@@ -1,0 +1,115 @@
+//
+// Site Navigation
+//===========================
+
+.genesis-nav-menu {
+
+	> .first > a {
+		padding-left: 0;
+	}
+
+	> .last > a {
+		padding-right: 0;
+	}
+
+	.menu-item {
+		display: inline-block;
+		position: relative;
+		text-align: left;
+	}
+
+	li {
+		font-size: rem(14);
+		@include media($small-screen-up) {
+			font-size: rem(18);
+		}
+	}
+
+	a {
+		color: $white;
+		display: inline-block;
+		font-weight: 400;
+		letter-spacing: 1px;
+		padding: 7px 20px;
+		position: relative;
+		width: 100%;
+
+		@include media($medium-screen-up) {
+			padding: 15px 20px;
+		}
+	}
+
+	a:hover,
+	a:focus,
+	.current-menu-item > a,
+	.sub-menu .current-menu-item > a:hover {
+		color: lighten($black, 56);
+	}
+
+	.sub-menu {
+		a:hover, a:focus {
+			outline: lighten($black, 63) dotted thin;
+		}
+
+		.current-menu-item > a {
+			color: lighten($black, 56);
+		}
+	}
+
+	> .menu-item > a {
+		border-bottom: 0;
+	}
+
+	.menu-item:hover > .sub-menu {
+		left: auto;
+		opacity: 1;
+	}
+
+	.menu-item:hover, .menu-item:focus {
+		position: relative;
+	}
+
+	.sub-menu {
+		background-color: lighten($black, 7);
+		clear: both;
+		display: none;
+		opacity: 1;
+		position: static;
+
+		@include media($medium-screen-up) {
+			display: block;
+			left: -9999px;
+			margin: 0;
+			opacity: 0;
+			position: absolute;
+			@include transition( opacity 0.4s ease-in-out );
+			width: 200px;
+			z-index: 99;
+		}
+
+		a {
+			border: 0;
+
+			@include media($medium-screen-up) {
+				letter-spacing: 0;
+				width: 200px;
+			}
+		}
+
+		.sub-menu a {
+			padding-left: 20px;
+		}
+	}
+}
+@include media($medium-screen-up) {
+
+	.genesis-nav-menu {
+		.sub-menu .sub-menu {
+			margin: -54px 0 0 199px;
+		}
+
+		.menu-item:hover {
+			position: static;
+		}
+	}
+}

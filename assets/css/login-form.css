@@ -1,0 +1,48 @@
+html, body {
+    height: auto;
+}
+
+.login h1 a {
+    /*background-image: url( 'assets/images/logo-stacked.png' );*/
+    background-size: 198px;
+    width: 198px;
+    height: 198px;
+    margin: 0 auto;
+
+}
+.login h1 {
+    background-color: transparent;
+}
+
+.login form {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #1b202d;
+    color: #fff;
+}
+
+.login label {
+    color: #fff;
+}
+
+.wp-core-ui .button-primary:hover {
+    background-color: #cb4b14;
+}
+
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+    background-color: #627f00;
+    border-color: transparent;
+    padding: 0 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 900;
+}
+
+#backtoblog {
+    padding-bottom: 100px;
+}

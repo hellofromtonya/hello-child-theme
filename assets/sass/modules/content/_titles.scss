@@ -1,0 +1,51 @@
+//
+// Titles
+//=======================
+
+.full-width-bar,
+.entry-header,
+.author-box,
+.archive-description,
+.page-header {
+  margin: 0 -5% 30px;
+  padding: 20px 5%;
+  background: $titleBannerColor;
+
+  @include media($medium-screen-up) {
+    margin-left: -17vw;
+    margin-right: -17vw;
+    padding-left: 17vw;
+    padding-right: 17vw;
+  }
+
+  @include media($large-screen-up) {
+    margin-left: -19vw;
+    margin-right: -19vw;
+    padding-left: 19vw;
+    padding-right: 19vw;
+  }
+
+  @include media($huge-screen) {
+    margin-left: -30vw;
+    margin-right: -30vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+  @include media($medium-screen-up) {
+    p, .entry-title {
+      margin-left: -40px;
+    }
+  }
+}
+
+.entry-title {
+  margin-bottom: 0;
+
+  a {
+    border: 0;
+    color: $darkBlue;
+    &:hover, &:focus, &:active {
+      color: $orange;
+    }
+  }
+}

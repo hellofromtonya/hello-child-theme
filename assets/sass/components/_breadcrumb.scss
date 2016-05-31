@@ -1,0 +1,13 @@
+/* Breadcrumb
+--------------------------------------------- */
+
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: rem(14);
+
+  @include media($medium-screen-up) {
+    padding: 0;
+    font-size: rem(16);
+  }
+}

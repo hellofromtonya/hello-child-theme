@@ -1,0 +1,18 @@
+//
+// Octopus
+// ============================
+
+.home-video  {
+  .embed-vimeo {
+    margin: 0 auto rem(40) !important;
+    max-width: 90%;
+
+    //@include media($medium-screen-up) {
+    //  max-width: 800px;
+    //}
+
+    @include media($large-screen-up) {
+      max-width: 1000px;
+    }
+  }
+}
