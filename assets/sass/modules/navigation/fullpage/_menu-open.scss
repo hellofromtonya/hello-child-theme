@@ -1,0 +1,35 @@
+
+//
+// Let's have some fun when the menu is open
+//==============================================
+
+body.menu__open {
+
+  .hamburger__menu {
+    &::before, &::after {
+      display: none;
+    }
+  }
+
+  .hamburger__text {
+    display: none;
+  }
+
+  .hamburger__line {
+    transition: all ease-in-out 0.2s;
+    top: 0;
+    background: $yellow;
+
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+//
+// Entry Content
+//=========================
+
+.entry-content ol,
+.entry-content ul,
+.quote-caption {
+  margin-bottom: 26px;
+}
+
+.entry-content {
+  .attachment a,
+  .gallery a {
+    border: 0;
+  }
+
+  ol ol,
+  ul ul,
+  ol ul,
+  ul ol {
+    margin-bottom: 0;
+  }
+
+  ol li,
+  ul li {
+    margin-left: 60px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+    &.no-list-style {
+      list-style-type: none;
+    }
+
+  }
+
+  ul > li {
+    list-style-type: disc;
+    &.no-list-style {
+      list-style-type: none;
+    }
+  }
+
+  ul.icons-ul > li {
+    list-style-type: none;
+  }
+
+  ol ol,
+  ul ul,
+  .wp-caption p {
+    margin-bottom: 0;
+  }
+}

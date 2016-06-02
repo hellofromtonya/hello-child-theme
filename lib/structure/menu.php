@@ -9,3 +9,5 @@
  * @license     GNU General Public License 2.0+
  */
 namespace Hello\Structure;
+
+remove_action( 'genesis_after_header', 'genesis_do_nav' );

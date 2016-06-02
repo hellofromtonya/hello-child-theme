@@ -10,6 +10,8 @@
 	Text Domain: hello
 */
 
+$use-bounceInDown: true;
+
 // Config
 $imagePath: 'assets/images';
 
@@ -29,7 +31,6 @@ $imagePath: 'assets/images';
 @import "modules/index";
 
 // Templates - Page specific styles
-@import "templates/archive/index";
 @import "templates/posts-page/index";
 
 // Widgets

@@ -25,7 +25,24 @@ return array(
 	/*===============================================================================================
 	 * There are a lot of things that are not necessarily setup tasks.  These go in here.
 	 *=============================================================================================*/
-	'init_pre' => array(
+	'init_pre'            => array(
+
+		/*===============================================================================================
+		 * Do you have scripts in your theme? Then once you run gulp, they are concatenated and renamed
+		 * as jquery.project.js along with a minified version.  You can enqueue them right here by
+		 * uncommented this element.
+		 *=============================================================================================*/
+//		'enqueue_scripts'  => array(
+//			'hello_js' => array(
+//				'is_script' => true,
+//				'handle'    => 'hello_js',
+//				'config'    => array(
+//					'file'    => get_stylesheet_directory_uri() . '/assets/dist/js/jquery.project.min.js',
+//					'deps'    => array( 'jquery' ),
+//					'version' => CHILD_THEME_VERSION,
+//				),
+//			),
+//		),
 
 		/*===============================================================================================
 		 * Do you want to use Google fonts?  If yes, then uncomment this parameter and then add in
@@ -35,7 +52,7 @@ return array(
 			'handle'        => 'hello_google_fonts',
 			'font_families' => array(
 				'Playfair+Display',
-				'Oswald',
+				'Playball',
 				'Source+Sans+Pro',
 			),
 		),
@@ -44,22 +61,22 @@ return array(
 		 * Customizing the login form is so easy.  All you need to do is specify a logo and the CSS file
 		 * location.  This theme includes a login form stylesheet.  You can customize that file.
 		 *=============================================================================================*/
-		'login_form' => array(
-			'logo' => get_stylesheet_directory_uri() . '/assets/images/hellofromtonya.jpg',
+		'login_form'   => array(
+			'logo' => CHILD_THEME_URL . '/assets/images/hellofromtonya.jpg',
 			'css'  => CHILD_THEME_DIR . '/assets/css/login-form.css',
 		),
 
 		/*===============================================================================================
 		 * As you storing images in the assets file, you'll need to specify which one is the favicon.
 		 *=============================================================================================*/
-		'favicon' => CHILD_THEME_DIR . '/assets/images/favicon.jpg',
+		'favicon'      => CHILD_THEME_URL . '/assets/images/favicon.jpg',
 	),
 
 	/*===============================================================================================
 	 * Each of the following configuration parameters is loaded on the `genesis_setup` event hook.
 	 * Just follow the instructions to customize your child theme.  Then let Fulcrum do the work for you.
 	 *=============================================================================================*/
-	'setup' => array(
+	'setup'               => array(
 
 		/*===============================================================================================
 		 * Genesis has a bunch of preconfigured layouts available for you.  You can unregister them here.
@@ -97,58 +114,62 @@ return array(
 				'footer',
 				'footer-widgets',
 				'header',
-				'nav',
 				'site-inner',
 			),
-			'genesis_footer-widgets'       => 4,
-			'register_sidebars'            => array(
-				array(
-					'id'          => 'disclaimer',
-					'name'        => __( 'Disclaimer', 'hello' ),
-					'description' => __( 'This is the Disclaimer section on very bottom of the site.', 'hello' ),
-				),
-			),
+//			'genesis_footer-widgets'       => 4,
+		),
 
-			/*===============================================================================================
-			 * Genesis provides two different sidebars.  But maybe you don't want both of them.  You can
-			 * unregister them here by adding the name of the sidebar into the array.  Comment it out if you
-			 * want the sidebars.
-			 *=============================================================================================*/
-			'unregister_sidebars'          => array(
+		/*===============================================================================================
+		 * Want to add some sidebar widget areas? Excellent. Just configure them up right here.
+		 *=============================================================================================*/
+		'register_sidebars'            => array(
+			array(
+				'id'          => 'inpost',
+				'name'        => __( 'In Post', 'hello' ),
+				'description' => __( 'This is the inpost widget that displays right after the post content.', 'hello' ),
+			),
+		),
+
+		/*===============================================================================================
+		 * Genesis provides two different sidebars.  But maybe you don't want both of them.  You can
+		 * unregister them here by adding the name of the sidebar into the array.  Comment it out if you
+		 * want the sidebars.
+		 *=============================================================================================*/
+		'unregister_sidebars'          => array(
 //				'sidebar',
-				'sidebar-alt',
-			),
+			'sidebar-alt',
+		),
 
-			/*===============================================================================================
-			 * Out-of-the-box, there's an "edit" link on the page (which drives me crazy).  You can
-			 * disable it by setting this parameter to true.  If you want it in there, then just comment this
-			 * parameter out.
-			 *=============================================================================================*/
-			'disable_edit_link'            => true,
+		/*===============================================================================================
+		 * Out-of-the-box, there's an "edit" link on the page (which drives me crazy).  You can
+		 * disable it by setting this parameter to true.  If you want it in there, then just comment this
+		 * parameter out.
+		 *=============================================================================================*/
+		'disable_edit_link'            => true,
 
-			/*===============================================================================================
-			 * List any of the page templates that you want to remove from the Genesis framework.
-			 * In doing so, these templates will no longer appear in the Page templates dropdown
-			 * in the back-end.
-			 *=============================================================================================*/
-			'remove_page_templates'        => array(
-				'page_blog.php',
-			),
+		/*===============================================================================================
+		 * List any of the page templates that you want to remove from the Genesis framework.
+		 * In doing so, these templates will no longer appear in the Page templates dropdown
+		 * in the back-end.
+		 *=============================================================================================*/
+		'remove_page_templates'        => array(
+			'page_blog.php',
+		),
 
-			/*===============================================================================================
-			 * If you want to enable shortcodes in
-			 * the WordPress default text widget, then
-			 * set this parameter to 'true'.
-			 *=============================================================================================*/
-			'do_shortcodes_in_text_widget' => true,
+		/*===============================================================================================
+		 * If you want to enable shortcodes in
+		 * the WordPress default text widget, then
+		 * set this parameter to 'true'.
+		 *=============================================================================================*/
+		'do_shortcodes_in_text_widget' => true,
 
-			/*========================================
-			 * Add image sizes by specifying an array containing
-			 * each image size you want to add into the site.
-			 *
-			 * For more information on what the parameters are
-			 * @link https://developer.wordpress.org/reference/functions/add_image_size/
-			 *=============================================================================================*/
+		/*========================================
+		 * Add image sizes by specifying an array containing
+		 * each image size you want to add into the site.
+		 *
+		 * For more information on what the parameters are
+		 * @link https://developer.wordpress.org/reference/functions/add_image_size/
+		 *=============================================================================================*/
 //			'add_image_size'               => array(
 //				'name' => array(
 //					'width'  => 0,
@@ -156,7 +177,6 @@ return array(
 //					'crop'   => false,
 //				),
 //			),
-		),
 	),
 
 );

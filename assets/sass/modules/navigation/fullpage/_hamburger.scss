@@ -1,0 +1,74 @@
+$hamburgerSpacing: 8px;
+
+.hamburger__menu {
+  margin-top: ($headerHeight / 2);
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10001;
+  transform: translate(0, -20px);
+  border-bottom: none;
+
+  @media screen and (min-width: 800px) {
+    width: 80px;
+  }
+
+  // The funky squares
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    background-color: $orange;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 0;
+    bottom: 0;
+    margin-left: -40px;
+  }
+
+  &::after {
+    top: 11px;
+    left: 10px;
+    background-color: $yellow;
+  }
+}
+
+.hamburger__text, .hamburger__lines {
+  display: inline-block;
+}
+
+.hamburger__text {
+  text-align: right;
+  color: $orange;
+  font-size: 14px;
+  line-height: 40px;
+
+  @media screen and (min-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+.hamburger__lines {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  float: right;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: $orange;
+
+  left: 0;
+  transition: all ease-in-out 0.3s;
+
+  @for $index from 0 through 2 {
+    &:nth-child(#{$index + 1}) {
+      top: 10px + $index * $hamburgerSpacing;
+    }
+  }
+}

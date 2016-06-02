@@ -6,9 +6,9 @@
 .entry-content a.button,
 .content-hide-message a.button,
 input[type="submit"] {
-  background: $blue;
-  border: 1px solid $blue;
-  border-bottom: 1px solid $blue;
+  background: $green;
+  border: 1px solid $green;
+  border-bottom: 1px solid $green;
   color: $white;
   cursor: pointer;
   font-size: $base-font-size;
@@ -37,22 +37,6 @@ input[type="submit"] {
     border-bottom: 1px solid $gray;
     color: $blue;
   }
-
-  &.button__free {
-    background-color: $colorFree;
-    border: 1px solid $colorFree;
-    color: $white;
-  }
-
-  &.button__basic_plan {
-    background-color: $colorBasic;
-    border: 1px solid $colorBasic;
-  }
-
-  &.button__pro_plan {
-    background-color: $colorPro;
-    border: 1px solid $colorPro;
-  }
 }
 
 .button {
@@ -64,18 +48,15 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus,
-.entry-content a.button:focus,
-.button__free,
-.button__basic_plan,
-.button__pro_plan {
+.entry-content a.button:focus {
   background-color: $white;
-  color: $blue;
+  color: $green;
 }
 
 .button:hover,
 .entry-content a.button:hover,
 input:hover[type="submit"] {
   background-color: $white;
-  border: 1px solid $blue;
-  color: $blue;
+  border: 1px solid $green;
+  color: $green;
 }

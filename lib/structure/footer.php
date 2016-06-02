@@ -10,7 +10,7 @@
  */
 namespace Hello\Structure;
 
-add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
+//add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
 /**
  * Render out the scroll up feature
  *
@@ -55,5 +55,5 @@ add_filter( 'genesis_footer_creds_text', __NAMESPACE__ . '\do_footer_creds' );
  * @return string Footer credentials, as shortcodes.
  */
 function do_footer_creds() {
-	return 'Copyright [footer_copyright first="2016"] hellofromTonya &middot; All Rights Reserved';
+	return 'Copyright [footer_copyright first="2016"] hellofromTonya &middot; Go. Be Kind.';
 }

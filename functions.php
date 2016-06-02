@@ -14,7 +14,7 @@ namespace Hello;
  * Define all of the constants
  */
 define( 'CHILD_THEME_NAME', 'hello' );
-define( 'CHILD_THEME_URL', 'http://hellofromtonya.com/blog' );
+define( 'CHILD_THEME_URL', get_stylesheet_directory_uri() );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 if ( ! defined( 'CHILD_THEME_DIR' ) ) {

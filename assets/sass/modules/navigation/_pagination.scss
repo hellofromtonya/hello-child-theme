@@ -1,36 +1,41 @@
 /* Pagination
 --------------------------------------------- */
 
-.pagination {
-  @include clearfix;
-}
-
 .pagination,
 .posts-navigation {
   margin-bottom: 40px;
 }
 
-.pagination .nav-links {
-  display: inline;
+.pagination {
 
-  a, .current {
-    background: $darkBlue;
-    border: 1px solid $white;
+  @include clearfix;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    font-size: 14px;
+    background: $green;
+    border: 1px solid $green;
     color: $white;
     cursor: pointer;
     display: inline-block;
-    padding: 8px 12px;
-    &:hover {
-      background: $white;
-      border: 1px solid $darkBlue;
-      color: $darkBlue;
+    padding: 4px 8px;
+    font-weight: 400;
+
+    @media screen and (min-width: 800px) {
+      font-size: 16px;
     }
   }
 
-  .current {
+  .active a, a:hover {
     background: $white;
-    border: 1px solid $darkBlue;
-    color: $darkBlue;
+    color: $green;
     cursor: none;
   }
 }

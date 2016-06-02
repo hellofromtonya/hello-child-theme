@@ -1,0 +1,9 @@
+p.intro {
+  color: darken( $black, 5%);
+  font-style: italic;
+  font-size: 18px;
+
+  @media screen and (min-width: 800px) {
+    font-size: 20px;
+  }
+}

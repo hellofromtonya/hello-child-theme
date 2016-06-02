@@ -5,29 +5,32 @@
 .entry-comments,
 .entry-pings {
   background: $comments-background-color;
-  padding: 40px;
+  //padding: 40px;
   margin-bottom: 40px;
 }
 
-.comment-respond input[type="email"],
-.comment-respond input[type="text"],
-.comment-respond input[type="url"] {
-  width: 50%;
-}
+.comment-respond {
+  input[type="email"],
+  input[type="text"],
+  input[type="url"] {
+    width: 100%;
+  }
 
-.comment-respond label {
-  display: block;
-  margin-right: 12px;
+  label {
+    display: block;
+    margin-right: 12px;
+  }
 }
 
 .entry-comments ul.children {
   margin-left: 40px;
 }
 
-.comment-list li,
-.ping-list li {
-  list-style-type: none;
-  margin-top: 24px;
+.comment-list, .ping-list {
+  li {
+    list-style-type: none;
+    margin-top: 24px;
+  }
 }
 
 .comment-meta,

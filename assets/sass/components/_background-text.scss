@@ -1,0 +1,17 @@
+.backgroundText {
+  font-size: calc(118px + 71 * ((100vw - 1024px) / 656));
+  font-family: $playfair;
+  z-index: 0;
+
+  transform: rotate(-90deg);
+  transform-origin: left top;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 20px);
+
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1;
+
+}

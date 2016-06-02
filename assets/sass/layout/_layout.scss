@@ -22,7 +22,11 @@ Structure and Layout
 	padding-top: 40px;
 }
 
-.utility-landing .site-container {
-	margin: 40px auto;
-	max-width: $wrap-max-width-medium;
+.content-sidebar-wrap {
+	margin: 0 auto;
+	max-width: 100%;
+
+	@media screen and (min-width: 1200px) {
+		max-width: 900px;
+	}
 }

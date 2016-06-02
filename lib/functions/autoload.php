@@ -19,6 +19,18 @@
  */
 namespace Hello\Functions;
 
+add_action( 'genesis_setup', __NAMESPACE__ . '\load_structure_files', 6 );
+/**
+ * Hey let's autoload up the child theme's files once Genesis launches.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function autoload_files() {
+	load_structure_files();
+}
+
 /**
  * Load function files.
  *
@@ -27,7 +39,8 @@ namespace Hello\Functions;
  * @return void
  */
 function load_function_files() {
-	include( __DIR__ . '/formatting.php' );
+	include( 'formatting.php' );
+	include( 'markup.php' );
 }
 
 /**
@@ -44,10 +57,10 @@ function load_structure_files() {
 	$folder = CHILD_THEME_DIR . '/lib/structure/';
 	$files  = array(
 //		'archive',
-//		'comments',
+		'comments',
 		'footer',
-//		'header',
-//		'menu',
+		'header',
+		'menu',
 		'post',
 //		'search',
 	);
@@ -57,5 +70,15 @@ function load_structure_files() {
 	}
 }
 
-load_function_files();
-load_structure_files();
+/**
+ * If you need files to load up before Genesis loads, well then put them in here.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function autoload_files_before_genesis_loads() {
+	load_function_files();
+}
+
+autoload_files_before_genesis_loads();

@@ -1,0 +1,25 @@
+.menu__container {
+  width: 0%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0;
+  background-color: $orange;
+  color: $white;
+}
+
+body.menu__open .menu__container {
+  opacity: 1;
+  width: 100%;
+  min-height: 500px;
+  overflow: auto;
+
+  .wrap {
+    padding: 60px 0;
+
+  }
+}

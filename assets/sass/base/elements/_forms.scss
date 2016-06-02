@@ -4,6 +4,7 @@
 
 input[type="text"],
 input[type="email"],
+input[type="url"],
 textarea {
   background: $white;
   border: 1px solid lighten($black, 85);
@@ -21,35 +22,38 @@ textarea {
   color: lighten($black, 33);
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button {
-  display: none;
+input[type="search"] {
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button {
+    display: none;
+  }
 }
 
 .search-form {
   position: relative;
-}
 
-.search-form [type="submit"] {
-  background-color: transparent;
-  background: url(images/icon-search-ltr.png) no-repeat 75% 53% $white;
-  border: 1px solid lighten($black, 85);
-  box-shadow: none;
-  height: 53px;
-  margin: 0;
-  overflow: hidden;
-  padding: 0 42px 0 0;
-  position: absolute;
-  right: 0;
-  text-indent: -9999px;
-  vertical-align: top;
-  width: 53px;
-  @include transition( none );
-}
 
-.search-form input[type="submit"]:focus,
-.search-form input[type="submit"]:hover {
-  background-color: lighten($black, 56);
-  background-position: 20% 53%;
-  text-indent: -9999px;
+  [type="submit"] {
+    background-color: transparent;
+    background: url(images/icon-search-ltr.png) no-repeat 75% 53% $white;
+    border: 1px solid lighten($black, 85);
+    box-shadow: none;
+    height: 53px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 42px 0 0;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    vertical-align: top;
+    width: 53px;
+    @include transition( none );
+  }
+
+  input[type="submit"]:focus,
+  input[type="submit"]:hover {
+    background-color: lighten($black, 56);
+    background-position: 20% 53%;
+    text-indent: -9999px;
+  }
 }

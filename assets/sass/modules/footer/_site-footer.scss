@@ -3,11 +3,16 @@
 //===============================
 
 .site-footer {
-	background-color: $darkBlue;
-	color: $white;
-	font-size: $footer-font-size;
-	padding: 20px 0;
+	background-color: $yellow;
+	color: $green;
+	font-size: 12px;
+	padding: 10px 0;
 	text-align: left;
+
+	@media screen and (min-width: 800px) {
+		font-size: $footer-font-size;
+		padding: 20px 0;
+	}
 
 	a {
 		color: $white;
@@ -16,10 +21,6 @@
 			border-bottom: 0;
 			color: $orange;
 		}
-	}
-
-	.fa-heart {
-		color: $red;
 	}
 
 	p {

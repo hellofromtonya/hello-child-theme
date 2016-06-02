@@ -1,0 +1,11 @@
+/* Entries
+--------------------------------------------- */
+
+.entry {
+	padding: 0 0 24px;
+	word-wrap: break-word;
+
+	@include media($medium-screen-up) {
+		padding: 0 0 24px;
+	}
+}

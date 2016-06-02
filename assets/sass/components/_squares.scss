@@ -1,0 +1,17 @@
+.square {
+  position: absolute;
+  height: 80%;
+  width: 150px;
+
+  &:nth-child(1) {
+    background-color: $orange;
+    top: 0;
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    background-color: $yellow;
+    top: 10%;
+    left: 20%;
+  }
+}

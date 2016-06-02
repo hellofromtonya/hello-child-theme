@@ -1,0 +1,13 @@
+/* ## Entry Meta
+--------------------------------------------- */
+
+.entry-meta {
+  font-size: 14px;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+

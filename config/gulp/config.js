@@ -70,7 +70,7 @@ module.exports = function ( themeRoot ) {
 		images: [ assetDirs.images + '*', '!' + assetDirs.images + '*.svg' ],
 		sass: assetDirs.sass + '**/*.scss',
 		concatScripts: assetDirs.scripts + 'concat/*.js',
-		scripts: [ assetDirs.scripts + '*.js', '!' + assetDirs.scripts + '*.min.js', '!' + assetDirs.scripts + 'customizer.js' ],
+		scripts: [ assetDirs.scripts + '*.js', '!' + assetDirs.scripts + '*.min.js' ]
 	};
 
 	/**
@@ -121,12 +121,12 @@ module.exports = function ( themeRoot ) {
 			src : [ distDirs.scripts + "*.*" ]
 		},
 		concat: {
-			src: assetDirs.scripts + 'concat/*.js',
+			src: assetDirs.scripts + '/**/*.js',
 			dest: distDirs.scripts,
 			concatSrc: 'jquery.project.js',
 		},
-		uglify: {
-			src: distDirs.scripts,
+		minify: {
+			src: distDirs.scripts + '*.js',
 			dest: distDirs.scripts,
 		}
 	};
