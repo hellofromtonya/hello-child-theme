@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Stop and say "Hello"
  *
  * @package     Hello
- * @since       1.0.0
+ * @since       1.0.1
  * @author      hellofromTonya
  * @link        http://hellofromtonya.com/blog
  * @license     GNU General Public License 2.0+
@@ -15,7 +16,7 @@ namespace Hello;
  */
 define( 'CHILD_THEME_NAME', 'hello' );
 define( 'CHILD_THEME_URL', get_stylesheet_directory_uri() );
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '1.0.1' );
 
 if ( ! defined( 'CHILD_THEME_DIR' ) ) {
 	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );
