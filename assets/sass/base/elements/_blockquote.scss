@@ -1,0 +1,85 @@
+blockquote {
+  color: $green;
+  margin: 0;
+  padding: 24px 40px;
+
+  &::before {
+    content: "\201C";
+    display: block;
+    font-family: $serif;
+    font-size: 120px;
+    height: 0;
+    left: -55px;
+    position: relative;
+    top: -55px;
+  }
+
+  &.pullleft, &.pullright {
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  &.pullleft {
+    border-left: 5px solid $green;
+    padding-left: 20px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  &.pullright {
+    border-right: 5px solid $green;
+    padding-right: 20px;
+    float: right;
+    margin-left: 20px;
+  }
+}
+
+.pullleft, .pullright {
+  &::before {
+    display: none;
+    font-size: 0;
+    content: "";
+  }
+}
+
+span.quote__left, span.quote__right {
+  max-width: 35%;
+  margin: 15px;
+  padding: 10px;
+  border: none;
+  background-color: $yellow;
+  color: $black;
+  font-style: italic;
+  font-size: 110%;
+
+  &.gray {
+    background-color: $gray;
+  }
+
+  &.light {
+    background-color: #f2f2f2;
+  }
+
+  &.orange {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &.green {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+span.quote__ {
+  &left {
+    margin-left: 0;
+    float: left;
+    text-align: left;
+  }
+  &right {
+    margin-right: 0;
+    float: right;
+    text-align: right;
+  }
+}

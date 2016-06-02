@@ -8,15 +8,26 @@ h3,
 h4,
 h5,
 h6 {
-  color: $darkBlue;
+  color: $black;
   font-family: $heading-font-family;
   font-weight: 700;
   line-height: $heading-line-height;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
-}
 
+  &.orange {
+    color: $orange;
+  }
+
+  &.green {
+    color: $green;
+  }
+
+  &.yellow {
+    color: $yellow;
+  }
+}
 
 $headingScaler: 0.8;
 h1 {

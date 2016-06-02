@@ -22,7 +22,7 @@ add_filter( 'genesis_attr_entry-title', __NAMESPACE__ . '\add_fullpage_title_to_
  * @return array Amended attributes.
  */
 function add_fullpage_title_to_attributes( array $attributes ) {
-	if ( doing_filter( 'genesis_attr_entry-title' ) && ! is_single() ) {
+	if ( doing_filter( 'genesis_attr_entry-title' ) && ! is_singular() ) {
 		return $attributes;
 	}
 

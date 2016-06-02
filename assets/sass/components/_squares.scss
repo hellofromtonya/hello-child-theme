@@ -1,17 +1,22 @@
-.square {
-  position: absolute;
-  height: 80%;
-  width: 150px;
+.squares {
+  position: relative;
+  margin-left: 40px;
 
-  &:nth-child(1) {
+  &::before, &::after {
+    content: "";
+    position: absolute;
     background-color: $orange;
+    width: 20px;
+    height: 20px;
     top: 0;
     left: 0;
+    bottom: 0;
+    margin-left: -40px;
   }
 
-  &:nth-child(2) {
+  &::after {
+    top: 5px;
+    left: 10px;
     background-color: $yellow;
-    top: 10%;
-    left: 20%;
   }
 }

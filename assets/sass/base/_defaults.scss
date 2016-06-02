@@ -75,22 +75,6 @@ ul {
 	padding: 0;
 }
 
-blockquote {
-	color: $black;
-	margin: 0;
-	padding: 24px 40px;
-	&::before {
-		content: "\201C";
-		display: block;
-		font-family: $serif;
-		font-size: 120px;
-		height: 0;
-		left: -55px;
-		position: relative;
-		top: -55px;
-	}
-}
-
 pre {
 	background: lighten($black, 11);
 	color: lighten($black, 79);
