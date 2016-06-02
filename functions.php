@@ -11,12 +11,14 @@
  */
 namespace Hello;
 
+$child_theme = wp_get_theme();
+
 /**
  * Define all of the constants
  */
-define( 'CHILD_THEME_NAME', 'hello' );
+define( 'CHILD_THEME_NAME', $child_theme->Name );
 define( 'CHILD_THEME_URL', get_stylesheet_directory_uri() );
-define( 'CHILD_THEME_VERSION', '1.0.1' );
+define( 'CHILD_THEME_VERSION', $child_theme->Version );
 
 if ( ! defined( 'CHILD_THEME_DIR' ) ) {
 	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );

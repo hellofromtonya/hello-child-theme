@@ -19,12 +19,16 @@ Structure and Layout
 }
 
 .site-inner {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .content-sidebar-wrap {
 	margin: 0 auto;
 	max-width: 100%;
+
+	body.blog & {
+		margin-top: 60px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		max-width: 900px;

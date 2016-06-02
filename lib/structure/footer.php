@@ -3,18 +3,18 @@
  * Footer structure customization.
  *
  * @package     Hello\Structure
- * @since       1.0.0
+ * @since       1.0.2
  * @author      hellofromTonya
  * @link        http://hellofromtonya.com/blog
  * @license     GNU General Public License 2.0+
  */
 namespace Hello\Structure;
 
-//add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
+add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
 /**
  * Render out the scroll up feature
  *
- * @since  1.0.25
+ * @since  1.0.2
  *
  * @return void
  */
@@ -50,10 +50,10 @@ add_filter( 'genesis_footer_creds_text', __NAMESPACE__ . '\do_footer_creds' );
 /**
  * Change the footer text.
  *
- * @since  1.0.0
+ * @since  1.0.2
  *
  * @return string Footer credentials, as shortcodes.
  */
 function do_footer_creds() {
-	return 'Copyright [footer_copyright first="2016"] hellofromTonya &middot; Go. Be Kind.';
+	return 'Copyright [footer_copyright first="2016"] hellofromTonya &middot; ' . esc_html( get_bloginfo( 'description' ) );
 }

@@ -11,4 +11,8 @@
 
     margin: 20px -500%;
     padding: 20px 500%;
+
+    body.blog &, body.archive & {
+        margin-bottom: 60px;
+    }
 }
