@@ -11,31 +11,15 @@
  */
 namespace Hello;
 
-
-// add file save time for local dev
-$child_theme = wp_get_theme();
-
 /**
- * Define all of the constants
+ * Launch the child theme
  */
-define( 'CHILD_THEME_NAME', $child_theme->Name );
-define( 'CHILD_THEME_URL', get_stylesheet_directory_uri() );
-define( 'CHILD_THEME_VERSION', $child_theme->Version );
-
-if ( ! defined( 'CHILD_THEME_DIR' ) ) {
-	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );
-}
-define( 'CHILD_DIST_URL', get_stylesheet_directory_uri() . '/assets/dist/' );
+$hello = \Fulcrum\Addon\init_theme( __DIR__ . '/config/theme.php' );
 
 /**
  * Let's load in all the files
  */
 require_once( __DIR__ . '/lib/functions/autoload.php' );
-
-/**
- * Launch the child theme
- */
-\Fulcrum\Addon\init_theme( __DIR__ . '/config/theme.php' );
 
 /**
  * Now we can launch Genesis
