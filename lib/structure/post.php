@@ -25,9 +25,9 @@ function date_only_for_post_info() {
 	return '[post_date] | [post_categories before=""]';
 }
 
-remove_all_actions('genesis_entry_footer');
+remove_all_actions( 'genesis_entry_footer' );
 
-add_action( 'genesis_entry_header', __NAMESPACE__ . '\render_post_featured_image', 11 );
+//add_action( 'genesis_entry_header', __NAMESPACE__ . '\render_post_featured_image', 11 );
 /**
  * Render out the post's featured image on singles.
  *
