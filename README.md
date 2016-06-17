@@ -11,14 +11,15 @@ Remember that a child theme's intents are (1) to customize the [Genesis](http://
 These child theme has some cool features and encompasses what I teach on [Know the Code](https://knowthecode.io).
 
 1. Clean, modular, DRY, and purposeful.
-2. Configurable through config files
-3. Theme version is set by the stylesheet and then stored in a `CHILD_THEME_VERSION` for easy use.  [Fulcrum](https://github.com/hellofromtonya/Fulcrum) takes care of this for you. And when you are in development mode, i.e. as specified in the `wp-config.php` file with a `define( 'FULCRUM_ENV', true );`, the child theme's version is set to the stylesheet's file date and time.
-4. [Sass](http://sass-lang.com/) is my choice to keep the CSS modular.
-5. [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/) remove some redundancies as they provide needed mixins for you to that cool stuff done.
-6. You need a task runner to compile the Sass and compress your assets.  My task runner of choice is gulp.  This theme includes a modular gulp task setup.
-7. Files are autoloaded for you in the `lib/functions/autoload.php` file.  If you add more files or change what I have loaded, go to this file and make your changes.
-8. The file/folder architecture follows the [Genesis](http://my.studiopress.com/themes/genesis/) framework for ease of finding what you need.
-9. You won't find HTML in the business logic.  Nope silly, all of the HTML are views.
+2. Configure over code. Configurable through config files
+3. Versioning made easy. Theme version is set by the stylesheet and then stored in a `CHILD_THEME_VERSION` for easy use.  [Fulcrum](https://github.com/hellofromtonya/Fulcrum) takes care of this for you. And when you are in development mode, i.e. as specified in the `wp-config.php` file with a `define( 'FULCRUM_ENV', true );`, the child theme's version is set to the stylesheet's file date and time.
+4. [Animate.css](https://daneden.github.io/animate.css/) is included in the [Sass folders](https://github.com/hellofromtonya/hello-child-theme/tree/master/assets/sass/utilities/animate).  You just turn on the ones you want to use to keep the stylesheet lean.
+5. [Sass](http://sass-lang.com/) is my choice to keep the CSS modular.
+6. [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/) remove some redundancies as they provide needed mixins for you to that cool stuff done.
+7. [gulp](http://gulpjs.com/) You need a task runner to compile the Sass and compress your assets.  My task runner of choice is gulp.  This theme includes a modular gulp task setup.
+8. Autoload files. Files are autoloaded for you in the `lib/functions/autoload.php` file.  If you add more files or change what I have loaded, go to this file and make your changes.
+9. The file/folder architecture follows the [Genesis](http://my.studiopress.com/themes/genesis/) framework for ease of finding what you need.
+10. Views. You won't find HTML in the business logic.  Nope silly, all of the HTML are views.
 
 ## Dependencies
 
