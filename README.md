@@ -1,10 +1,10 @@
 # Hello Child Theme
 
-This theme is a custom-built Genesis and Fulcrum powered child theme for [my personal website](http://hellofromtonya.com/blog).  It's built in a DRY, modular, clean, purposeful fashion.  Check it out. Use it in your own projects.
+This theme is a custom-built [Genesis](http://my.studiopress.com/themes/genesis/) and [Fulcrum](https://github.com/hellofromtonya/Fulcrum) powered child theme for [Hello Life blog](http://hellofromtonya.com/blog).  It's built in a DRY, modular, clean, purposeful fashion.  Check it out. Use it in your own projects.
 
 ## A word about theme vs. plugin from Tonya
 
-Remember that a child theme's intents are (1) to customize the Genesis framework, as it does the heavy lifting for you, and (2) provide the styling and personality for your website.  I want you to resist the temptation of putting everything into the theme.  Don't do it. Features like custom post types, taxonomies, shortcodes, widgets, etc. do not belong in a theme. Nope, put those into a plugin.
+Remember that a child theme's intents are (1) to customize the [Genesis](http://my.studiopress.com/themes/genesis/) framework, as it does the heavy lifting for you, and (2) provide the styling and personality for your website.  I want you to resist the temptation of putting everything into the theme.  Don't do it. Features like custom post types, taxonomies, shortcodes, widgets, etc. do not belong in a theme. Nope, put those into a plugin.
 
 ## Cool Features:
 
@@ -20,9 +20,17 @@ These child theme has some cool features and encompasses what I teach on [Know t
 
 Yup there are dependencies that you will need to have on your local development machine and in your project.  Let's walk through them.
 
-1. [Fulcrum](https://github.com/hellofromtonya/Fulcrum) is my custom core plugin, as it powers all of my sites.  It is the central library to keep my sites clean, DRY, and modular.
-2. [Fulcrum Site](https://github.com/hellofromtonya/fulcrum-site) handles the site specific stuff including loading up Font Awesome, Scroll up, smooth scroll, and more.
-3. Node, npm, and gulp - You need these installed on your local dev machine in order to use gulp.
+1. [Genesis](http://my.studiopress.com/themes/genesis/) is my theming framework of choice
+2. [Fulcrum](https://github.com/hellofromtonya/Fulcrum) is my custom core plugin, as it powers all of my sites.  It is the central library to keep my sites clean, DRY, and modular.
+3. [Fulcrum Site](https://github.com/hellofromtonya/fulcrum-site) handles the site specific stuff including loading up Font Awesome, shortcodes, smooth scroll, and more.
+4. Node, npm, and gulp - You need these installed on your local dev machine in order to use gulp.
+
+### Optional Dependencies
+
+Here is a list of optional dependencies:
+
+1. [Catfish](https://github.com/hellofromtonya/catfish) sticky footer used on [Hello Life blog](http://hellofromtonya.com/blog/).
+2. [Ninja Forms](https://ninjaforms.com/) - my go-to for all of my WordPress form needs
 
 ## Instructions to install:
 
