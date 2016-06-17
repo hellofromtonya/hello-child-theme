@@ -20,6 +20,10 @@ Structure and Layout
 
 .site-inner {
 	padding-top: 30px;
+
+	body.single & {
+		padding-top: 80px;
+	}
 }
 
 .content-sidebar-wrap {

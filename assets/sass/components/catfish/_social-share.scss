@@ -1,0 +1,15 @@
+//
+// Social Share
+// ===================
+
+.catfish__content {
+  .share-container {
+    float: left;
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .social-share:last-child {
+    margin-left: 20px;
+  }
+}

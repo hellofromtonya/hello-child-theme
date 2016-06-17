@@ -1,4 +1,6 @@
-
+//
+// Entry Header
+//======================
 
 .entry-header {
   .entry-meta {
@@ -6,7 +8,6 @@
     padding: 0;
     margin-bottom: 0;
     position: relative;
-    margin-left: 40px;
 
     &::before, &::after {
       content: "";

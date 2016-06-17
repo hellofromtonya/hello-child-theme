@@ -10,7 +10,7 @@
  */
 namespace Hello\Structure;
 
-add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
+//add_action( 'genesis_after_footer', __NAMESPACE__ . '\render_scrollup' );
 /**
  * Render out the scroll up feature
  *

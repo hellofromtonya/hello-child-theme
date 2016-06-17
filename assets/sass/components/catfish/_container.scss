@@ -1,0 +1,36 @@
+.catfish__content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: transform .3s;
+  transform: translateY(100%);
+
+  .fa {
+    font-size: 16px;
+
+    @include media(767px) {
+      font-size: 18px;
+    }
+
+    @include media(1024px) {
+      font-size: 22px;
+    }
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  background-color: #f2f2f2;
+  box-shadow: 0 0 1px rgba(0,0,0,0.44);
+  color: $black;
+  padding: 10px;
+
+  .catfish.is-visible & {
+    transform: translateY(0);
+  }
+}
+
+.catfish__panel {
+  display: inline-block;
+}
