@@ -1,3 +1,11 @@
+## 1.0.14
+
+- Better variable naming
+
+## 1.0.10 to 13
+
+- Styles
+
 ## 1.0.9
 
 - Inpost widget styling

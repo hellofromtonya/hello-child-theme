@@ -1,0 +1,24 @@
+cite {
+  font-style: italic;
+  font-weight: 700;
+
+  span {
+    display: block;
+  }
+
+  .book__title {
+    font-size: ($h2-font-size * $headingScaler);
+
+    @media screen and (min-width: 800px) {
+      font-size: $h2-font-size;
+    }
+  }
+
+  .book__subtitle {
+    font-size: ($h4-font-size * $headingScaler);
+
+    @media screen and (min-width: 800px) {
+      font-size: $h4-font-size;
+    }
+  }
+}

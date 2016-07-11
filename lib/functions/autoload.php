@@ -2,11 +2,11 @@
 
 /**
  * File autoloader
- * 
+ *
  * We could use Composer, but it feels a bit heavy for the number of files we need to load up.  As this is procedural
  * and not OOP, we can handle loading the files directly right here in this file.  Now to add more files to be loaded,
  * well shucks you can do that right here.  A function is provided for each folder.
- * 
+ *
  * Resist the temptation to add widgets, custom post types, taxonomies, and/or shortcodes in your theme.  Those features
  * go into a plugin and not in your theme.  If you put them here, I want you to picture me shaking my head back and
  * forth.  Come on....I taught you better than that.
@@ -49,13 +49,13 @@ function load_function_files() {
  * You specify which structure files you want to load in the `$files` array.  Just
  * uncomment the ones you want and comment out the ones you don't.
  *
- * @since 1.0.0
+ * @since 1.0.14
  *
  * @return void
  */
 function load_structure_files() {
-	$folder = CHILD_THEME_DIR . '/lib/structure/';
-	$files  = array(
+	$folder    = CHILD_THEME_DIR . '/lib/structure/';
+	$filenames = array(
 //		'archive',
 		'comments',
 		'footer',
@@ -65,8 +65,8 @@ function load_structure_files() {
 //		'search',
 	);
 
-	foreach ( $files as $file ) {
-		include( $folder . $file . '.php' );
+	foreach ( $filenames as $filename ) {
+		include( $folder . $filename . '.php' );
 	}
 }
 

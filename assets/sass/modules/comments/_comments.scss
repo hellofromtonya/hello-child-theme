@@ -26,7 +26,7 @@
 }
 
 .comment-list, .ping-list {
-  li {
+  li.comment {
     list-style-type: none;
     margin-top: 24px;
   }
@@ -73,4 +73,13 @@ p.form-submit,
     left: 10px;
     background-color: $yellow;
   }
+}
+
+.comment-content ul {
+  margin: 0 0 20px 60px;
+  list-style-type: disc;
+}
+
+.subscribe-to-comments label {
+  display: inline-block;
 }
