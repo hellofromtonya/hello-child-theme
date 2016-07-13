@@ -1,10 +1,17 @@
 # Hello Child Theme
 
-This theme is a custom-built [Genesis](http://my.studiopress.com/themes/genesis/) and [Fulcrum](https://github.com/hellofromtonya/Fulcrum) powered child theme for [Hello Life blog](http://hellofromtonya.com/blog).  It's built in a DRY, modular, clean, purposeful fashion.  Check it out. Use it in your own projects.
+This theme is a custom-built [Genesis](http://my.studiopress.com/themes/genesis/) and [Fulcrum](https://github.com/hellofromtonya/Fulcrum) powered child theme for my personal blogs including [Hello WordPress blog](https://hellofromtonya.com/blog), [Level Up blog](https://hellofromtonya.com/level-up), and [Hello Life blog](https://hellofromtonya.com/hello-life).  It's built in a DRY, modular, clean, purposeful fashion.  Check it out. Use it in your own projects.
+
+Psst....it is also the starting point for any of my projects.
 
 ## A word about theme vs. plugin from Tonya
 
-Remember that a child theme's intents are (1) to customize the [Genesis](http://my.studiopress.com/themes/genesis/) framework, as it does the heavy lifting for you, and (2) provide the styling and personality for your website.  I want you to resist the temptation of putting everything into the theme.  Don't do it. Features like custom post types, taxonomies, shortcodes, widgets, etc. do not belong in a theme. Nope, put those into a plugin.
+Remember that a child theme's intents are 
+
+- to customize the [Genesis](http://my.studiopress.com/themes/genesis/) framework, as it does the heavy lifting for you, and 
+- provide the styling and personality for your website.
+
+I want you to resist the temptation of putting everything into the theme.  Don't do it. Features like custom post types, taxonomies, shortcodes, widgets, etc. do not belong in a theme. Nope, put those into a plugin.
 
 ## Cool Features:
 
@@ -34,7 +41,7 @@ Yup there are dependencies that you will need to have on your local development 
 
 Here is a list of optional dependencies:
 
-1. [Catfish](https://github.com/hellofromtonya/catfish) sticky footer used on [Hello Life blog](http://hellofromtonya.com/blog/).
+1. [Catfish](https://github.com/hellofromtonya/catfish) sticky footer.
 2. [Ninja Forms](https://ninjaforms.com/) - my go-to for all of my WordPress form needs
 
 ## Instructions to install:
