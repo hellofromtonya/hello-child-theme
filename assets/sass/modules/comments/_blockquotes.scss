@@ -1,0 +1,9 @@
+.comment-content blockquote {
+  color: $grayDark;
+  border-left: 5px solid $grayDark;
+  padding: 10px;
+
+  &::before {
+    content: '';
+  }
+}

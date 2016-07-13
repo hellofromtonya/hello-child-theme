@@ -1,0 +1,22 @@
+
+#reply-title, #comments h3 {
+  position: relative;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    background-color: $orange;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -40px;
+  }
+
+  &::after {
+    top: 5px;
+    left: 10px;
+    background-color: $yellow;
+  }
+}
