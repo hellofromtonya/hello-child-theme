@@ -50,7 +50,7 @@ This theme requires a few thingies to be installed and setup before you can rock
 
 1. Install the [Fulcrum](https://github.com/hellofromtonya/Fulcrum), the central custom repository plugin for WordPress.  I put this as a must-use plugin.
 2. Open up terminal and navigate to the `themes` folder.
-3. Then type: `git clone https://gitlab.com/hellofromtonya/hello-child-theme.git`
+3. Then type: `git clone https://github.com/hellofromtonya/hello-child-theme.git`
 4. Rename the folder to what you want.  For this example, we'll call it `hello`.
 4. 'cd hello`
 5. Let's get the task runner ready to rock for you.  Type: `npm install --save-dev`. In doing so, node creates a new folder called `node_modules` and loads in all the dependencies.
